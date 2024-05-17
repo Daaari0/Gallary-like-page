@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Picture Gallery</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!-- Title and Logo -->
+            <div>
+                <!-- Logo -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEX///8AAADQ0NC2trb4+PgVFRV+fn5mZmanp6cdHR1SUlLu7u5LS0uVlZX19fXx8fHl5eUoKCg/Pz/W1tbBwcGvr6+fn5/d3d3JyckLCwtvb28wMDBYWFhgYGCJiYmPj484ODicAyGLAAAIfklEQVR4nO2d6ZqqOhBFRUFFkHkQcXr/p7wO3W1SlYmQAOe72f/OUTCLIdmpqqRXKycnJycnJycnJycnJycnp/+3kmhzO+SdN72C4ty0qW8OJdtcZ8AglN/L1AxKVBfzory1LU2wnM5zc3yU19FolkXclre6bTaSpZnjpedp145i2S+J5Ukz5t5U/dzNB7on2izZZe7GI1XaMLe5m86Q7oN2WkxHRuioCXOcu+FM6Y02ZUyfpd9tZ9D5AGD2WjAb+iS3Kkv86RWVDX1Rcx2WhH7K9gaN60CVdKeq0ztnO/IMx/lYYE+k0zu35IBZjDMSY7WlrqvGCdbUC2NoOqEpyomcNU5AwdTG2zdILfmcXTROQMFsjLdvkCKyQztonMDBWJKDIeVgLImCWXhvVjXHjXAgo2D65vhRfVK2JZPBVEUfBPmjEXyFgvGCH4V9cd2oObWpYBqFxycCs5GvulzJNU4Ec/r+CN908WFeUnCeE8GQzeR+SQzjbaXOcRqYjLSQ3EssgfEusrn0NDDrnPgVbh8gg/EukqDNPwXj7cT3ZhqYlHzM1rxvyWG6u/BnJuoAiIQJP1Qhh/F6YZ82EUz6/ZET90sKMN5Z9KBNNWiWv78hCIipwAhnw5PZmfT9pB1EIRMlmK3g1gyB8UfmtDJJ8IeCiaP2pXV9DSmYgP+YDoK5aUaAVcWZz6zpyL7gORsAU4dePzbfKBRvchZRNILnTB2menjyMXiUuDPNE5mmjPkPqzLMz80+W6ThwlAx5JBfKqAK0/7kHDpRbzJSXBi/IVvJdRCqMNHftenu1mK4/IAGlXcZC5MQMe2usZUqmAiGus3WQtLTwNQeLf3MtlCTwJQelGAUHqEpYFrE4nlGKqmgJoDJmMUoNnJs9mEydnlgoXFvSn4zpoGJtpyKp8NgmjaOxcfYhkmOAZtleFlYenm2UGiGbMPUXJbBNu3tIQ6ioLFlmJOwqu42pPDgx0OIMhV2YVpJheCAGoi/QhDVwLlpmIyesHpeDv7tKdu06nsMP8FvEwbFFwofRRwUbdqafPW4aQCLMD6sdC6yFaZRCui0D/KQjldtZBEGFtU9XifJYF2YiumERaA5537ag9mDRvefD0tEIzWdESpmf7CvgDWYDRhgwt93/QSftF5Ck95wn1gwj7EFU1FPuUeOKRv4USy0XP6eNe4+WMbGEswaXv4d8c7WsIe+iCxXxfYQD4Z9sANDlwd6r06ZPKaB7RPUu7MmQx8abB+swKRUSd5TOQgv3WHLuDYthd/8qkcdtA0YH3bKAfLHqEidE03z+SzPd20KGNgpd4yBEfW2zLUICerHKZ3BvbEAU3lAzIQqfKtYJsWHjysUsN3mYZDrZ+dEE3RvELMPlxgVF/Af3ZGiMQ7TwvDFljNpidC9gQm+GpjusM7gFQgpm2YaBq2l4U8nW0RDWy64xCh4vlbo9JRNMwtTIad8EUz0kU3LyZ6ihCtZzq9bjOJWOWHTDN8Z2OWyPdSv0MobwkAie/0z7mbgv73w2zazMHAlcCiZe22gsfmzaSnqH35fDkTT/T3IZmHgz4jK9jg0H5uWoE75241gg/NLYxVmK2Nh2LTr+yVD4y7ZAGQ9w8g+jNLSggYdlaEFRl5AP64bGCiJI9swF7XICzKd2wSeswMhKb+BNJ/SK3swsWq8Er0ed/gioXpEHPR9G1VrMA9JxP4rqQNjFCKhqXT3Mqq2YLoBmb5ITMOsg0BTpqDxrcEMysEiy0WKk8hJYNon2NuCGbjgq+Wvjg55t9hHC3erxArMdmimH0fTfsWvlfNRBGpDnsUUjLB0kHMaTt3bTXCMcE5tCkbklLlCgba3dsJjWpRVMA4jdspcoWEdNoihE/MKGIQZ0ilTgmUcz/ZIH1fBHhFGYPQLY6C79K5SGL/m0piA0d1V4CW0s4D4lXnTINttEOY+pvwKRQ8VjLd/5NUZjIbR6JRJJTjSKafhmKHRMMISahVhmyYaaH7ErmcZH50ZycLIknUKLyFzwLVXCaiuFl7nUGE3DNb+KkuAwTbtIT9rwqBZBAyOpilYihY/acuAWZ2g5TrIZ63YqC4EhlyU+ZGCdUU2bSkwOMUjXZT4bC8wNouBQYEzr5Afs6dt93JgsOlECUws2gwtCAbbNLnppNO+C4JZJTi9Lj3GNxoDMLmADtm0TurIJ1rYoCOcwJTVDZqFMbv8Atm0vhbTZEZhDK+MgfvA8erM/tpCDpxX8hNFmJL0HlfDC8pQLEls06hMBzWtU4ShE6mmF8aglJ9oCQFdWUDNHBRh6E6nN706DgV/ev6KNToaQNk5RRgQ7gqU0zKKwnE5zhdh/ID6UBXmBCKRxb5aG1SJBs+8ZHythqMSbRhUYSSporlEv1uqMKvNsrYE/ghEqZVhcNnxAgQarAyzvB2OcV2YOsyKv3ppJqFp9gCYFFWOzSvsegbAqG1eMZly7EeHwMjKXCdVzpiIDIJhlMDMpZ7l3gbCrMpF9GkBOwcyFGblN7Eo+zuBggdv7edgmCdOtb3Gjzz8iDQGXWhbfXHYNdzplAbMU0lb1fu3anLa1zd7u6o3a9HEUA+GEFkPc5hzU+qVARiyt47tbgUklYMh5WAsycGQInsz5VJaS9qPhSHnBeJ9Ba2LLk/V2VmFyrAoVNJbFBV2FWwJxheVmNSsqDMjnwqpaW1KlpBnUEl/21JKT0/0ovu0h46P62yGP3+StjWIHum9vnABRnHZTa/rAURctcphV6vIW6KkC5Q4WuIfQBKv1xfdmqXF07wxNaSobGR2nfU3JMTJ/JlVjBkghItJplc4Lre/KJqRLE8axt4kMyke73ZTtLB0Jt2M7EOYLaEbiCv9P0tJyc+ame/OeW0I5aNsv43zYHqFj+txzumHk5OTk5OTk5OTk5OTk9M/rP8A5tKNnRgw93kAAAAASUVORK5CYII="
+                    alt="Gallary symbol.">
+                <!-- Title -->
+                <h1>Gallery</h1>
+            </div>
+        </header>
+
+        <hr>
+
+        <main>
+            <!-- Navigation and albums -->
+            <nav>
+                <!-- Navigation: add album, see all -->
+                <div id="add">
+                    <a href="#">+</a>
+                </div>
+                <h2>Albums</h2>
+                <a href="##" class="seeAll">See All</a>
+            </nav>
+
+            <section id="albums-list">
+
+                <div class="album">
+                    <figure id="recent"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Recenti</div>
+                        <div class="album-numerosity">563</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="favorite"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Preferite</div>
+                        <div class="album-numerosity">53</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="camera"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Camera</div>
+                        <div class="album-numerosity">23</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="sweden"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Sweden</div>
+                        <div class="album-numerosity">151</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="Puglia"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Puglia</div>
+                        <div class="album-numerosity">653</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="scotland"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Scotland</div>
+                        <div class="album-numerosity">248</div>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <figure id="sevilla"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Sevilla</div>
+                        <div class="album-numerosity">423</div>
+                    </div>
+                </div>
+                <div class="album">
+                    <figure id="london"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">London</div>
+                        <div class="album-numerosity">156</div>
+                    </div>
+                </div>
+                <div class="album">
+                    <figure id="mallorca"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Mallorca</div>
+                        <div class="album-numerosity">95</div>
+                    </div>
+                </div>
+                <div class="album">
+                    <figure id="bilbao"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Bilbao</div>
+                        <div class="album-numerosity">231</div>
+                    </div>
+                </div>
+                <div class="album">
+                    <figure id="girona"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Girona</div>
+                        <div class="album-numerosity">36</div>
+                    </div>
+                </div>
+                <div class="album">
+                    <figure id="tenerife"> </figure>
+                    <div class="album-info">
+                        <div class="album-name">Tenerife</div>
+                        <div class="album-numerosity">12</div>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
